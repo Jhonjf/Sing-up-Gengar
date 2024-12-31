@@ -1,0 +1,214 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fundo escuro para um visual dark */
+    color: #f4f4f4; /* Texto claro */
+}
+
+/* Container Central */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #ff003c, #1e1e1e); /* Gradiente destacado */
+    padding: 60px 0;
+    margin-bottom: 60px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1.title {
+    font-size: 3.5rem;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff003c;
+    transform: scale(1.1);
+}
+
+/* Sobre Mim */
+#sobre {
+    padding: 80px 0;
+    background-color: #1e1e1e;
+    margin-bottom: 100px;
+}
+
+#sobre h2.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ff003c;
+    margin-bottom: 40px;
+}
+
+#sobre .sub-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+.linguagens {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Até 4 ícones por linha */
+    gap: 30px;
+    justify-items: center;
+    margin-top: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.linguagem {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.linguagem img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.linguagem p {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Projetos */
+#projetos {
+    padding: 80px 0;
+}
+
+.projeto {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-10px);
+}
+
+.projeto-img img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.projeto-info {
+    width: 45%;
+}
+
+.projeto-info h3 {
+    color: #ff003c;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.projeto-info p {
+    font-size: 1.1rem;
+    color: #f4f4f4;
+    margin-bottom: 15px;
+}
+
+.projeto-info a.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.projeto-info a.button:hover {
+    background-color: #8e2de2;
+}
+
+/* Contato */
+#contato {
+    padding: 80px 0;
+    background-color: #121212;
+    text-align: center;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+#contato input, #contato textarea {
+    padding: 15px;
+    background-color: #333;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#contato button {
+    background-color: #ff003c;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contato button:hover {
+    background-color: #8e2de2;
+}
